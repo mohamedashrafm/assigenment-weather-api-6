@@ -1,0 +1,112 @@
+nav{
+    background-color: #1E202B;
+}
+.navbar-nav li{
+    padding: 10px;
+}
+.nav-link {
+    color: white;
+    padding: 5px 25px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    font-weight: 400;
+}
+.nav-link:hover {
+    color: #009AB7;
+    padding: 5px 25px;
+    border: 2px solid #009AB7;
+    border-radius: 30px;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    font-weight: 400;
+}
+.nav-link li{
+    padding-left: 20px;
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
+    color: #009AB7;
+    padding: 5px 25px;
+    border: 2px solid #009AB7;
+    border-radius: 30px;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    font-weight: 400;
+}
+.overlay{
+    
+    background-image: url(banner.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.form-control{
+    background-color: #1E202B;
+    border: #1E202B;
+    padding: 15px;
+    border-radius: 30px;
+}
+.form-control:focus{
+    background-color: #1E202B;
+    color: white;
+}
+.main{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 0 30px;
+
+}
+
+.item-card{
+    background-color: #262936;
+    color: aliceblue;
+    width: 33.33%;
+    border: 1px solid #1E202B;
+    text-align: center;
+}
+/* .item-card .day-data {
+    background-color: #1E202B;
+    color: rgba(255, 255, 255, 0.767);
+} */
+
+footer{
+    background-color: #262936;
+}
+
+footer i {
+    color: #009AB7;
+    margin-right: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 1px solid #1E202B;
+    padding: 10px;
+    background-color: #1E202B;
+    border-radius: 50%;
+}
+
+footer i:hover{
+    color: white;
+    background-color: #009AB7;
+    border-color: #009AB7;
+}
+
+
+
+
+@media only screen and (max-width: 900px){
+    .item-card{
+        width: 50%;
+    }    
+}
+@media only screen and (max-width: 600px){
+    .item-card{
+        width: 100%;
+    }    
+}
+

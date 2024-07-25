@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/21da3bc2eb.js" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg p-5">
+        <div class="container ">
+            <img src="logo.png" class="me-2">
+            <a class="navbar-brand text-light " href="#">Weather</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-bg-light"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 w-75 justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link active mt-1" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  mt-1" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mt-1" href="#">Live Cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mt-1" href="#">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mt-1" href="#">contact</a>
+              </li>
+             
+             
+          </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="overlay p-2">
+            <div class="container p-5 d-flex align-content-center">
+                <!-- search -->
+                <form class="position-relative w-100 mb-5">
+                  <input type="search" id="find" class="form-control w-100 text-light">
+                  <input type="button" value="Find" class="btn btn-info rounded-4 main">
+                </form>
+            </div>
+            <div class="container mb-5">
+              <div class="row row-lg-cols-4 row-cols-md-6 row-sm-cols-12 m-auto justify-content-center w-100">
+                <div class="item-card py-4">
+                  <div class="day-and-date d-flex justify-content-between">
+                    <p id="today">Monday</p>
+                    <p id="today-date">3 May</p>
+                  </div>
+                  <div class="item-datails">
+                    <p id="location" class="fs-3"></p>
+                    <div class="d-flex justify-content-around my-4">
+                      <div class="pt-3">
+                        <h2 id="today-degree" class="d-inline-block"></h2>
+                        <h2 class="d-inline-block"><sup>o</sup>C</h2>
+                      </div>
+                      <img id="today-icon"  width="90"/>
+                    </div>
+                    <p id="today-description"></p>
+                    <div class="details">
+                      <i class="fas fa-umbrella pr-1"></i>
+                      <span id="humidty"></span> <span>%</span>
+    
+                      <i class="fas fa-wind pl-3 pr-1"></i>
+                      <span id="wind"></span> <span>km/h</span>
+    
+                      <i class="far fa-compass pl-3 pr-1"></i>
+                      <span id="compass"></span>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="item-card text-center py-4">
+                  <div class="day-and-date">
+                    <p class="nextDay">Tuesday</p>
+                  </div>
+    
+                  <div class="item-datails">
+                    <div>
+                      <img class="nextDay-icon" width="90"/>
+                    </div>
+                    <h2 class="max-degree d-inline-block"></h2><h2 class="d-inline-block"><sup>o</sup>C</h2>
+                    <br>
+                    <p class="min-degree d-inline-block"></p><p class="d-inline-block"><sup>o</sup>C</p>
+                    <p class="nextDay-description"></p>
+                  </div>
+                </div>
+                <div class="item-card text-center py-4">
+                  <div class="day-and-date">
+                    <p class="nextDay">Wednsday</p>
+                  </div>
+    
+                  <div class="item-datails">
+                    <div>
+                      <img class="nextDay-icon" width="90"/>
+                    </div>
+                    <h2 class="max-degree d-inline-block"></h2><h2 class="d-inline-block"><sup>o</sup>C</h2>
+                    <br>
+                    <p class="min-degree d-inline-block"></p><p class="d-inline-block"><sup>o</sup>C</p>
+                    <p class="nextDay-description"></p>
+                  </div>
+                </div>
+              </div>
+        
+      </div>
+      </div>
+    </header>
+
+
+
+    <footer class="pb-5">
+      <div class="container p-5 d-flex align-content-center">
+        <!-- search -->
+        <form class="position-relative w-75 text-center">
+          <input type="search" id="find" class="form-control w-100">
+          <input type="button" value="Subscribe" class="btn btn-info my-3">
+        </form>
+        <div class="social-media text-white text-center ms-5">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-pinterest"></i>
+          <i class="fab fa-google-plus"></i>
+        </div>
+    </div>
+    <p class="text-light w-75 m-auto">Copyright 2014 Company name. Designed by Mohamed. All rights reserved</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
